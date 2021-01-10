@@ -1,16 +1,25 @@
-figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    margin: auto;
-  }
-  
-  figcaption {
-    background-color: black;
-    color: white;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;}
-    .link{
-        text-align: center;
-    }
-    
+div img{
+  width: 30%;
+
+}
+.bat:hover{
+  transform: rotate(-60deg);
+  transform-origin: 100% 0%;
+
+}
+.bat{
+  transition: transform 2s ease-in-out 2s;
+
+}
+.ball{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  left: 300px;
+  transition: transform 2s ease-in-out 2s;
+}
+.fild:hover .ball{
+  transform: translate(800px, -200px)
+}
