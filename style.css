@@ -1,25 +1,37 @@
-div img{
-  width: 30%;
-
-}
-.bat:hover{
-  transform: rotate(-60deg);
-  transform-origin: 100% 0%;
-
-}
-.bat{
-  transition: transform 2s ease-in-out 2s;
-
-}
 .ball{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
-  position: relative;
-  left: 300px;
-  transition: transform 2s ease-in-out 2s;
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    border-radius: 50px;
+    position: absolute;
 }
-.fild:hover .ball{
-  transform: translate(800px, -200px)
+.stage{
+    background-color: cornflowerblue;
+    height: 200px;
+    min-width: 800px;
+}
+@keyframes slyding{
+    0%{
+        left: 0;
+        top: 0;
+        background-color: blue;
+
+
+
+    }
+    100%{
+        left: 800px;
+        top: 0;
+        background-color: yellow;
+
+    }
+    50%{
+        left: 400px;
+        top: 120px;
+        background-color: brown;
+
+    }
+}
+.stage:hover .ball{
+    animation: slyding 4s ease-in-out 1s infinite alternate;
 }
