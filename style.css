@@ -1,37 +1,13 @@
-.ball{
-    height: 100px;
+.box{
     width: 100px;
-    background-color: chartreuse;
-    border-radius: 50px;
-    position: absolute;
-}
-.stage{
-    background-color: cornflowerblue;
-    height: 200px;
-    min-width: 800px;
-}
-@keyframes slyding{
-    0%{
-        left: 0;
-        top: 0;
-        background-color: blue;
-
-
-
+    height: 100px;
+    border: 3px solid palevioletred;
+    border-radius: 5px;
+    font-size: 20px;}
+    .continar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
-    100%{
-        left: 800px;
-        top: 0;
-        background-color: yellow;
-
-    }
-    50%{
-        left: 400px;
-        top: 120px;
-        background-color: brown;
-
-    }
-}
-.stage:hover .ball{
-    animation: slyding 4s ease-in-out 1s infinite alternate;
-}
+    
