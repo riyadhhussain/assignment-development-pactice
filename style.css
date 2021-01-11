@@ -5,6 +5,7 @@
     border-radius: 10px;
     position: relative;
     margin: 10px;
+    overflow: hidden;
     
 }
 .photo-frem img{
@@ -39,4 +40,8 @@
     flex-wrap: wrap;
 
 
+}
+.photo-frem:hover .photo img{
+    transform: scale(1.2);
+    transition: transform 1s;
 }
