@@ -1,21 +1,40 @@
-.clender ul{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 1.5em;
-
-}
-.clender li{
-    list-style: none;
-    font-size: 3em;
-    height: 70px;
-    background-color: cadetblue;
+.continar{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 800px;
+    flex-direction: row;
+    margin: 0 auto;
+    
+  
+    
+    
+}
+.food{
+
+    border: 2px solid palegreen;
+    border-radius: 30px;
+    margin: 5px;
+    width: 200px;
+    
+    text-align: center;
+    
+    
+
 
 }
-.other-month{
-    background-color: coral! important; 
-}
+.food img{
+    width: 100%;}
 
+    @media (max-width: 750px) {
+        .continar .food{
+            background-color: salmon;
+        }
+    }
+    @media (min-width: 900px ) {
+        .food{
+            background-color: slateblue;
+            flex-direction: column;
+            
+        }
+    }
 
+  
