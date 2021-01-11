@@ -1,11 +1,21 @@
-.box{
-    
-    border: 2px solid palevioletred;
-    border-radius: 5px;
-    
-}
-.grid{
+.clender ul{
     display: grid;
-    grid-template-columns: repeat(4, 350px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1.5em;
+
 }
+.clender li{
+    list-style: none;
+    font-size: 3em;
+    height: 70px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.other-month{
+    background-color: coral! important; 
+}
+
+
