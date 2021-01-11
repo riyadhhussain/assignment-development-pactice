@@ -1,23 +1,42 @@
-.line-speace{
-    line-height: 0.5;
-}
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: cornflowerblue;
-    margin: 5px;
-    border: 1px solid red;
-
-}
-.containar{
-    display: flex;
+.photo-frem{
+    height: 135px;
+    width: 200px;
+    border: 3px solid red;
+    border-radius: 10px;
     position: relative;
-
-
+    margin: 10px;
     
 }
-.box-2{
+.photo-frem img{
+    width: 100%;
+}
+.photo-detail{
     position: absolute;
-    top: 70px;
-    left: 70px;
+    height: 135px;
+    width: 200px;
+    top: 0;
+    display: none;
+   
+    
+}
+.photo-frem:hover .photo-detail{
+    display: block;
+    background-color: rgba(201, 137, 126, 0.4);
+    
+}
+.photo-frem:hover .photo-detail h3{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.photo-frem:hover .photo-detail p{
+    color: white;
+   
+
+}
+.photo-albam{
+    display: flex;
+    flex-wrap: wrap;
+
+
 }
