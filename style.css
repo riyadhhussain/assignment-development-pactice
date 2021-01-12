@@ -1,47 +1,14 @@
-.photo-frem{
-    height: 135px;
-    width: 200px;
-    border: 3px solid red;
-    border-radius: 10px;
-    position: relative;
-    margin: 10px;
-    overflow: hidden;
-    
+.continar{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-gap: 30px 18px;
 }
-.photo-frem img{
-    width: 100%;
+.artical{
+    background-color: lightgreen;
 }
-.photo-detail{
-    position: absolute;
-    height: 135px;
-    width: 200px;
-    top: 0;
-    display: none;
-   
-    
+.artical-1{
+    grid-row: 1/span 3;
 }
-.photo-frem:hover .photo-detail{
-    display: block;
-    background-color: rgba(201, 137, 126, 0.4);
-    
-}
-.photo-frem:hover .photo-detail h3{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-
-}
-.photo-frem:hover .photo-detail p{
-    color: white;
-   
-
-}
-.photo-albam{
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
-.photo-frem:hover .photo img{
-    transform: scale(1.2);
-    transition: transform 1s;
+.artical-2{
+    grid-column: 2/span 4;
 }
