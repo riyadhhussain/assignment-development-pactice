@@ -1,58 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        .cources{
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            place-items: center;
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .cource img{
+            width: 200px;
+        }
+        @media (max-width:668px){
+        .cources{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media (max-width:992px){
+        .cources{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    </style>
 </head>
+
 <body>
-    <section class="continar">
-        <artical class="artical artical-1">
-            <h3>artical-1</h3>
-        </artical>
-        <artical class="artical artical-2">
-            <h3>artical-2</h3>
-        </artical>
-        <artical class="artical artical-3">
-            <h3>artical-3</h3>
-        </artical>
-        <artical class="artical artical-4">
-            <h3>artical-4</h3>
-        </artical>
-        <artical class="artical artical-5">
-            <h3>artical-5</h3>
-        </artical>
-        <artical class="artical artical-6">
-            <h3>artical-6</h3>
-        </artical>
-        <artical class="artical artical-7">
-            <h3>artical-7</h3>
-        </artical>
-        <artical class="artical artical-8">
-            <h3>artical-8</h3>
-        </artical>
-        <artical class="artical artical-9">
-            <h3>artical-9</h3>
-        </artical>
-        <artical class="artical artical-10">
-            <h3>artical-10</h3>
-        </artical>
-        <artical class="artical artical-11">
-            <h3>artical-11</h3>
-        </artical>
-        <artical class="artical artical-12">
-            <h3>artical-12</h3>
-        </artical>
-        <artical class="artical artical-13">
-            <h3>artical-13</h3>
-        </artical>
-        <artical class="artical artical-14">
-            <h3>artical-14</h3>
-        </artical>
-        <artical class="artical artical-15">
-            <h3>artical-15</h3>
-        </artical>
-    </section>
+    <header></header>
+    <main class="containar">
+        <section>
+            <h1 class="section-tital">top-player</h1>
+            <div class="top-players">
+                <div class="player">
+                    <img src="picture/Ellipse.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+                <div class="player">
+                    <img src="picture/Ellipse-1.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+                <div class="player">
+                    <img src="picture/Ellipse-2.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+                <div class="player">
+                    <img src="picture/Ellipse-3.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+                <div class="player">
+                    <img src="picture/Ellipse-4.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+                <div class="player">
+                    <img src="picture/Ellipse-5.png" alt="">
+                    <h3>jon smith</h3>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section>
+            <h1 class="section-tital">top-blogs</h1>
+            <div class="blogs">
+                <artical class="blog">
+                    <div class="thambnail">
+                        <img src="picture/Mask Group.png" alt="">
+                    </div>
+                    <div class="info-blog">
+                        <h3>13 of My Favorite UI/UX Goodies</h3>
+                        <p>by <a href="java.com">rafa</a></p>
+                    </div>
+                </artical>
+                <artical class="blog">
+                    <div class="thambnail">
+                        <img src="picture/Mask Group-1.png" alt="">
+                    </div>
+                    <div class="info-blog">
+                        <h3>13 of My Favorite UI/UX Goodies</h3>
+                        <p>by <a href="java.com">rafa</a></p>
+                    </div>
+                </artical>
+                <artical class="blog">
+                    <div class="thambnail">
+                        <img src="picture/Mask Group-2.png" alt="">
+                    </div>
+                    <div class="info-blog">
+                        <h3>13 of My Favorite UI/UX Goodies</h3>
+                        <p>by <a href="java.com">rafa</a></p>
+                    </div>
+                </artical>
+                <artical class="blog">
+                    <div class="thambnail">
+                        <img src="picture/Mask Group-5.png" alt="">
+                    </div>
+                    <div class="info-blog">
+                        <h3>13 of My Favorite UI/UX Goodies</h3>
+                        <p>by <a href="java.com">rafa</a></p>
+                    </div>
+                </artical>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-tital"> lattest course</h1>
+            <div class="cources">
+                <div class="cource">
+                    <img src="picture/Mask Group-3.png" alt="">
+                    <div class="cource-details">
+                        <h1>React Complete Guide 2022</h1>
+                        <p><a href="karkoof.com">red kakoff</a></p>
+                    </div>
+                    <div style="display: flex;" class="cource-info">
+                        <div class="cource-rating">
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: rgb(202, 195, 195); font-size: 0.8em;" class="fas fa-star "></i>
+                        </div>
+                        <div class="cource-duration">
+                            <i class="far fa-clock"></i>
+                            <span>1:43hr</span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cource">
+                    <img src="picture/Mask Group-2.png" alt="">
+                    <div class="cource-details">
+                        <h1>React Complete Guide 2022</h1>
+                        <p><a href="karkoof.com">red kakoff</a></p>
+                    </div>
+                    <div style="display: flex;" class="cource-info">
+                        <div class="cource-rating">
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: rgb(202, 195, 195); font-size: 0.8em;" class="fas fa-star "></i>
+                        </div>
+                        <div class="cource-duration">
+                            <i class="far fa-clock"></i>
+                            <span>1:43hr</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cource">
+                    <img src="picture/Mask Group-3.png" alt="">
+                    <div class="cource-details">
+                        <h1>React Complete Guide 2022</h1>
+                        <p><a href="karkoof.com">red kakoff</a></p>
+                    </div>
+                    <div style="display: flex;" class="cource-info">
+                        <div class="cource-rating">
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: gold; font-size: 0.8em;" class="fas fa-star "></i>
+                            <i style="color: rgb(202, 195, 195); font-size: 0.8em;" class="fas fa-star "></i>
+                        </div>
+                        <div class="cource-duration">
+                            <i class="far fa-clock"></i>
+                            <span>1:43hr</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
