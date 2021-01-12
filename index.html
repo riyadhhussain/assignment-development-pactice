@@ -4,31 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    
     <link rel="stylesheet" href="css/all.min.css">
+    
 
     <style>
-        .cources{
-            grid-template-columns: repeat(3, 1fr);
-            display: grid;
-            place-items: center;
-            grid-gap: 20px;
-            margin-top: 20px;
-        }
-        .cource img{
-            width: 200px;
-        }
-        @media (max-width:668px){
-        .cources{
-            grid-template-columns: repeat(1, 1fr);
-        }
-        @media (max-width:992px){
-        .cources{
+        section{
+        background-color: seashell;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 1em;
+
+    }
+    .section-tital{
+        color: violet;
+    }
+    .top-players, .blogs{
+    display: grid;
+    place-items: center;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+.player img{
+    width: 20%;
+    margin: 10px;
+}
+.thambnail img{
+    width: 200px;
+    margin-right: 20px;
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+
+    
+    
+}
+
+}
+.containar{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-players{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+    @media (max-width:992px){
+        .top-players{
             grid-template-columns: repeat(2, 1fr);
         }
+        .blogs{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+    @media (max-width:668px){
+        .top-players{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .blog{
+            display: block;
+        }
         
+    }
+    body{
+        background-color: royalblue;
+        font-family: 'Poppins', sans-serif;;
+    }
+
+    
+    .cources{
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        place-items: center;
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+    .cource img{
+        width: 200px;
+    }
+    @media (max-width:668px){
+    .cources{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width:992px){
+    .cources{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+
+
+
     </style>
+    
 </head>
 
 <body>

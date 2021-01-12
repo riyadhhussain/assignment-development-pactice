@@ -20,8 +20,10 @@
     
     
 }
+
+}
 .containar{
-    width: 1200px;
+    width: 900px;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -54,3 +56,28 @@
         }
         
     }
+    body{
+        background-color: royalblue;
+        font-family: 'Poppins', sans-serif;;
+    }
+
+    
+    .cources{
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        place-items: center;
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+    .cource img{
+        width: 200px;
+    }
+    @media (max-width:668px){
+    .cources{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width:992px){
+    .cources{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
